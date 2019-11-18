@@ -16,4 +16,4 @@ RUN pip3 install -r requirements.txt
 
 EXPOSE 5000
 
-CMD ["entrypoint.sh"]
+ENTRYPOINT ["/opt/flask_app/entrypoint.sh"]
