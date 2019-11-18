@@ -14,4 +14,6 @@ ADD ./src /opt/flask_app
 
 RUN pip3 install -r requirements.txt
 
+EXPOSE 5000
+
 CMD ["cd /opt/flask_app && python3 main.py"]
