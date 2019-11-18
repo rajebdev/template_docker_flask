@@ -1,6 +1,4 @@
-FROM ubuntu:18.04
-
-MAINTAINER Wijanarko Putra Rajeb "wijanarko.rajeb@gmail.com"
+FROM python:3.6-alpine
 
 RUN apt-get update -y
 
@@ -14,6 +12,4 @@ WORKDIR /flask-app
 
 RUN pip3 install -r requirements.txt
 
-ENTRYPOINT ["python3"]
-
-CMD ["main.py"]
+CMD ["python3 main.py"]
